@@ -21,7 +21,7 @@ const AdminPanel = ({votes, setVotes, showNotification}) => {
         const data = await response.json();
         setVotes([...votes, data])
         setNewOption("");
-        showNotification("Option added sucessfully", "sucess");
+        showNotification("Option added sucessfully", "success");
     } catch (error) {
        showNotification(error.message, "error");
     }
